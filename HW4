@@ -1,0 +1,83 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#include<string.h>
+
+void son(void);
+int i,j,z;
+int main(void)
+{
+	printf("                                ________________               \n");
+	printf("                               |                |              \n");
+	printf("                             __|                |__            \n");
+	printf("                            |    __                |           \n");
+	printf("                            |   |  |               |           \n");
+	printf("                            |   |__|               |           \n");
+	printf("                            |                      |           \n");
+	printf("                            |                      |           \n");
+	printf("                            |               _______|           \n");
+	printf("                            |              |vvvvvvv            \n");
+	printf("                            |              |_______            \n");
+	printf("                            |                      |           \n");
+  printf("                            |               _______|           \n");
+  printf("        __                __|              |                   \n");
+	printf("       |  |            __|                 |                   \n");
+	printf("       |  |         __|                    |_______            \n");
+	printf("       |  |      __|                       |_____  |           \n");
+	printf("       |  |_____|                           __   | |           \n");
+	printf("       |                                   |  |  |_|           \n");
+	printf("       |                                   |  |__|             \n");
+	printf("       |                                   |                   \n");
+	printf("       |                                   |                   \n"); 
+	printf("       |__                                 |                   \n");
+	printf("          |__                            __|                   \n");
+	printf("             |_____          __       __|                      \n");
+	printf("                   |      __|  |__   |                         \n");
+	printf("                   |   __|        |  |                         \n");
+	printf("                   |  |           |  |                         \n");
+	printf("                   |  |_____      |  |____                     \n");
+	printf("                   |________|     |_______|                    \n");
+ int passworld,count=0;
+ int n=0,math[10],sic[10],eng[10];
+ int ok,math1[10],sic1[10],eng1[10];
+ float avg[10];
+ float avg1[10];
+ char name[10][9],number[10][9];
+ char sw,name1[10][9],number1[10][9];
+ char find[9];
+ char h[9],r[9];
+       float v;
+       int k,u,l;
+ son();
+ printf("請輸入4位密碼:");
+ while(1)
+ {
+  scanf("%d",&passworld);
+  count++;
+  if(passworld==2022)
+  {
+   break;
+  }
+  else if(count<3)
+  {
+   printf("請再次輸入");
+  }
+  else
+  {
+   printf("錯3次!再見!\a");
+   return 0;
+  }
+ }
+ while(1)
+ {
+  system("cls");                                 /*清除螢幕，螢幕出現主選單*/
+  printf("------------------------------\n");
+  printf("|  a. 輸入學生成績          |\n");
+  printf("|  b. 顯示學生成績          |\n");
+  printf("|  c. 搜尋學生成績          |\n");
+  printf("|  d. 成績排名              |\n");
+  printf("|  e. 系統結束              |\n");
+  printf("------------------------------\n");
+  fflush(stdin);
+  sw=getche();
+  switch(sw)
